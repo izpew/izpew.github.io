@@ -13,10 +13,8 @@ author: 환타
 # --- 상단에 표시될 메뉴 이름들 --- #
 
 # navbar-links:
-  menu: 
-    - 어쩌구저쩌구: "https://www.markdowntutorial.com/" # 이렇게 드롭다운 메뉴를 만들 수도 있습니다.
   Links: 
-    - Learn markdown: "https://www.markdowntutorial.com/" # 이렇게 드롭다운 메뉴를 만들 수도 있습니다.
+    - 한글안됨?: "https://www.markdowntutorial.com/" # 이렇게 드롭다운 메뉴를 만들 수도 있습니다.
 
 # --- 로고 --- #
 
