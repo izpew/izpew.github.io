@@ -126,8 +126,8 @@ img {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background-color: {{ site.navbar-col | default: "#EAEAEA" }};
-  border-bottom: 1px solid {{ site.navbar-border-col | default: "#DDDDDD" }};
+  background-color: {{ site.navbar-col | default: "#BDBDBD" }};
+  border-bottom: 1px solid {{ site.navbar-border-col | default: "#888888" }};
   font-family: 'Noto Sans KR', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   {% if site.navbar-img %}
     background-image: url({{ site.navbar-img | relative_url }});
