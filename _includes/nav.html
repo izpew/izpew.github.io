@@ -30,6 +30,16 @@
           </li>
         {%- endif -%}
       {%- endfor -%}
+      
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="tocDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Index</a>
+          <div class="dropdown-menu" aria-labelledby="tocDropdown">
+            <a class="dropdown-item" href="#section-intro">소개</a>
+            <a class="dropdown-item" href="#section-details">상세 내용</a>
+            <a class="dropdown-item" href="#section-summary">요약</a>
+          </div>
+        </li>
+      
             {% if site.post_search %}
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
