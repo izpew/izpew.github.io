@@ -93,3 +93,26 @@
 </nav>
 
 {% include search.html %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dropdown = document.querySelector('#toc-dropdown-wrapper');
+    const items = dropdown?.querySelectorAll('.dropdown-item');
+
+    let hasValidItem = false;
+
+    items.forEach(item => {
+      const id = item.getAttribute('data-check-id');
+      if (!document.getElementById(id)) {
+        item.style.display = 'none';
+      } else {
+        hasValidItem = true;
+      }
+    });
+
+    // 유효한 항목이 없으면 드롭다운 전체 숨김
+    if (!hasValidItem && dropdown) {
+      dropdown.style.display = 'none';
+    }
+  });
+</script>
