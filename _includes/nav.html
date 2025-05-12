@@ -26,12 +26,40 @@
           <a class="dropdown-item" href="#scene-1-4">4씬</a>
         </div>
       </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#cycle-2" id="tocDropdown" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+           onclick="event.preventDefault(); document.querySelector('#cycle-2').scrollIntoView({ behavior: 'smooth' }); this.parentElement.classList.toggle('show'); this.nextElementSibling.classList.toggle('show');">
+          2사이클
+        </a>
+        <div class="dropdown-menu" aria-labelledby="tocDropdown">
+          <a class="dropdown-item" href="#scene-2-1">1씬</a>
+          <a class="dropdown-item" href="#scene-2-2">2씬</a>
+          <a class="dropdown-item" href="#scene-2-3">3씬</a>
+          <a class="dropdown-item" href="#scene-2-4">4씬</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#cycle-3" id="tocDropdown" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+           onclick="event.preventDefault(); document.querySelector('#cycle-3').scrollIntoView({ behavior: 'smooth' }); this.parentElement.classList.toggle('show'); this.nextElementSibling.classList.toggle('show');">
+          3사이클
+        </a>
+        <div class="dropdown-menu" aria-labelledby="tocDropdown">
+          <a class="dropdown-item" href="#scene-3-1">1씬</a>
+          <a class="dropdown-item" href="#scene-3-2">2씬</a>
+          <a class="dropdown-item" href="#scene-3-3">3씬</a>
+          <a class="dropdown-item" href="#scene-3-4">4씬</a>
+        </div>
+      </li>
       
       {% if site.post_search %}
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
             <span id="nav-search-icon" class="fa fa-search"></span>
-            <span id="nav-search-text">Search</span>
+            <span id="nav-search-text">검색</span>
           </a>
         </li>
       {%- endif -%}
