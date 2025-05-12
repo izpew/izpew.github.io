@@ -12,7 +12,8 @@
 
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
-
+      
+    {%- if page.url != 'https://trpglog.o-r.kr/' %}
       <li class="nav-item">
         <a class="nav-link" href="#" onclick="event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' });">처음부터</a>
       </li>
@@ -73,7 +74,8 @@
       {%- endif -%}
     </ul>
   </div>
-
+{% endif %}
+  
   {% if site.navbar-extra %}
     {% for file in site.navbar-extra %}
       {% include {{ file }} %}
