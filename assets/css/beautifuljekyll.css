@@ -8,7 +8,7 @@ layout: null
 
 html {
   font-size: 100%;
-  word-break: normal;
+  word-break: keep-all;
   word-wrap: break-word;
 }
 
@@ -68,6 +68,9 @@ hr.small {
   border-width: 0.25rem;
   border-color: inherit;
   border-radius: 0.1875rem;
+}
+.force-break {
+  word-break: break-all;
 }
 
 /* fix in-page anchors to not be behind fixed header */
