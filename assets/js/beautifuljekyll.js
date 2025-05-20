@@ -134,3 +134,8 @@ var BeautifulJekyllJS = {
 // 2fc73a3a967e97599c9763d05e564189
 
 document.addEventListener('DOMContentLoaded', BeautifulJekyllJS.init);
+
+const content = document.getElementById("content");
+const text = content.innerHTML;
+const transformed = text.replace(/([ㅋㅎ]{10,})/g, '<span class="force-break">$1</span>');
+content.innerHTML = transformed;
